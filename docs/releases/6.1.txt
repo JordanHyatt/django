@@ -421,6 +421,7 @@ Requests and Responses
 
 * Mutable :class:`.QueryDict`\s now support the ``|=`` update operator for
   updating with the contents of a mapping or key/value iterable.
+  
 * :attr:`HttpRequest.multipart_parser_class <django.http.HttpRequest.multipart_parser_class>`
   can now be customized to use a different multipart parser class.
 
