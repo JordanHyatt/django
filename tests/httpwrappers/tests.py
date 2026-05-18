@@ -304,7 +304,6 @@ class QueryDictTests(SimpleTestCase):
     def test_update_operator_immutable(self):
         q = QueryDict("color=red&q=tacos")
         msg = "This QueryDict instance is immutable"
-        q |= {"color": "yellow"}
         with self.assertRaisesMessage(AttributeError, msg):
             q |= {"color": "yellow"}
         self.assertEqual(q, QueryDict("color=red&q=tacos"))
